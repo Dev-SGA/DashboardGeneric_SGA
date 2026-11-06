@@ -7,8 +7,8 @@
   "player": {
     "name": "Athlete Name",
     "club": "Club Name",
-    "clubLogo": "",
-    "photo": ""
+    "clubLogo": "/brand/sga-logo-symbol-white.png",
+    "photo": "/player/athlete-placeholder.png"
   },
   "matches": [
     {
@@ -16,7 +16,7 @@
       "kind": "session",
       "label": "vs Opponent 1",
       "shortLabel": "Game 1",
-      "logo": "",
+      "logo": "/brand/sga-logo-symbol-white.png",
       "goals": 0,
       "assists": 0,
       "passesUnderPressure": {
@@ -76,7 +76,7 @@
       "kind": "session",
       "label": "vs Opponent 2",
       "shortLabel": "Game 2",
-      "logo": "",
+      "logo": "/brand/sga-logo-symbol-white.png",
       "goals": 0,
       "assists": 0,
       "passesUnderPressure": {
@@ -137,7 +137,7 @@
       "kind": "session",
       "label": "vs Opponent 3",
       "shortLabel": "Game 3",
-      "logo": "",
+      "logo": "/brand/sga-logo-symbol-white.png",
       "goals": 0,
       "assists": 0,
       "passesUnderPressure": {
