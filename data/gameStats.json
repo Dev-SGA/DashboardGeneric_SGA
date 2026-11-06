@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "title": "Stats Game Report",
+    "subtitle": "Individual match statistics",
+    "session": "001"
+  },
+  "player": {
+    "name": "Athlete Name",
+    "club": "Club Name",
+    "clubLogo": "",
+    "photo": ""
+  },
+  "matches": [
+    {
+      "id": "game-1",
+      "kind": "session",
+      "label": "vs Opponent 1",
+      "shortLabel": "Game 1",
+      "logo": "",
+      "goals": 0,
+      "assists": 0,
+      "passesUnderPressure": {
+        "total": 53,
+        "underPressure": 33,
+        "notUnderPressure": 20,
+        "videoLink": ""
+      },
+      "passResults": {
+        "underPressure": {
+          "progressive": 8,
+          "neutral": 19,
+          "lost": 6,
+          "turnovers": 5
+        },
+        "notUnderPressure": {
+          "progressive": 7,
+          "neutral": 10,
+          "lost": 3,
+          "turnovers": 3
+        },
+        "videoLink": ""
+      },
+      "possessions": {
+        "total": 58,
+        "lostBalls": 2,
+        "wrongPasses": 9,
+        "lostPlays": 11,
+        "passTurnover": 8,
+        "duelTurnover": 0,
+        "videoLink": ""
+      },
+      "videos": [
+        { "label": "Progressive Passes", "url": "" },
+        { "label": "Inaccurate Passes", "url": "" },
+        { "label": "Turnover Passes", "url": "" },
+        { "label": "Off. Duels Won", "url": "" },
+        { "label": "Off. Duels Lost", "url": "" },
+        { "label": "Def. Duels Won", "url": "" },
+        { "label": "Def. Duels Lost", "url": "" },
+        { "label": "Recoveries", "url": "" },
+        { "label": "Interceptions", "url": "" }
+      ],
+      "duels": {
+        "offensiveWon": { "actions": 5, "good": 0, "bad": 0 },
+        "offensiveLost": { "actions": 2, "good": 0, "bad": 0 },
+        "fouled": { "actions": 3, "good": 0, "bad": 0 },
+        "defensiveWon": { "actions": 9, "good": 0, "bad": 0 },
+        "defensiveLost": { "actions": 8, "good": 0, "bad": 0 },
+        "fouls": { "actions": 2, "good": 0, "bad": 0 },
+        "interception": { "actions": 10, "good": 0, "bad": 0 },
+        "recovery": { "actions": 6, "good": 0, "bad": 0 }
+      }
+    },
+    {
+      "id": "game-2",
+      "kind": "session",
+      "label": "vs Opponent 2",
+      "shortLabel": "Game 2",
+      "logo": "",
+      "goals": 0,
+      "assists": 0,
+      "passesUnderPressure": {
+        "total": 69,
+        "underPressure": 56,
+        "notUnderPressure": 13,
+        "videoLink": ""
+      },
+      "passResults": {
+        "underPressure": {
+          "progressive": 10,
+          "neutral": 41,
+          "lost": 5,
+          "turnovers": 5
+        },
+        "notUnderPressure": {
+          "progressive": 5,
+          "neutral": 7,
+          "lost": 1,
+          "turnovers": 0
+        },
+        "videoLink": ""
+      },
+      "possessions": {
+        "total": 71,
+        "lostBalls": 2,
+        "wrongPasses": 6,
+        "lostPlays": 8,
+        "passTurnover": 5,
+        "duelTurnover": 2,
+        "videoLink": ""
+      },
+      "videos": [
+        { "label": "Progressive Passes", "url": "" },
+        { "label": "Inaccurate Passes", "url": "" },
+        { "label": "Turnover Passes", "url": "" },
+        { "label": "Off. Duels Won", "url": "" },
+        { "label": "Off. Duels Lost", "url": "" },
+        { "label": "Def. Duels Won", "url": "" },
+        { "label": "Def. Duels Lost", "url": "" },
+        { "label": "Recoveries", "url": "" },
+        { "label": "Interceptions", "url": "" },
+        { "label": "Turnover Duels", "url": "" }
+      ],
+      "duels": {
+        "offensiveWon": { "actions": 1, "good": 0, "bad": 0 },
+        "offensiveLost": { "actions": 2, "good": 0, "bad": 0 },
+        "fouled": { "actions": 0, "good": 0, "bad": 0 },
+        "defensiveWon": { "actions": 8, "good": 0, "bad": 0 },
+        "defensiveLost": { "actions": 2, "good": 0, "bad": 0 },
+        "fouls": { "actions": 2, "good": 0, "bad": 0 },
+        "interception": { "actions": 3, "good": 0, "bad": 0 },
+        "recovery": { "actions": 3, "good": 0, "bad": 0 }
+      }
+    },
+    {
+      "id": "game-3",
+      "kind": "session",
+      "label": "vs Opponent 3",
+      "shortLabel": "Game 3",
+      "logo": "",
+      "goals": 0,
+      "assists": 0,
+      "passesUnderPressure": {
+        "total": 41,
+        "underPressure": 33,
+        "notUnderPressure": 8,
+        "videoLink": ""
+      },
+      "passResults": {
+        "underPressure": {
+          "progressive": 10,
+          "neutral": 21,
+          "lost": 2,
+          "turnovers": 2
+        },
+        "notUnderPressure": {
+          "progressive": 3,
+          "neutral": 3,
+          "lost": 2,
+          "turnovers": 1
+        },
+        "videoLink": ""
+      },
+      "possessions": {
+        "total": 45,
+        "lostBalls": 1,
+        "wrongPasses": 4,
+        "lostPlays": 5,
+        "passTurnover": 3,
+        "duelTurnover": 1,
+        "videoLink": ""
+      },
+      "videos": [
+        { "label": "Progressive Passes", "url": "" },
+        { "label": "Inaccurate Passes", "url": "" },
+        { "label": "Off. Duels Won", "url": "" },
+        { "label": "Off. Duels Lost", "url": "" },
+        { "label": "Def. Duels Won", "url": "" },
+        { "label": "Def. Duels Lost", "url": "" },
+        { "label": "Recoveries", "url": "" },
+        { "label": "Interceptions", "url": "" },
+        { "label": "Turnover Duels", "url": "" },
+        { "label": "Turnover Passes", "url": "" }
+      ],
+      "duels": {
+        "offensiveWon": { "actions": 1, "good": 0, "bad": 0 },
+        "offensiveLost": { "actions": 1, "good": 0, "bad": 0 },
+        "fouled": { "actions": 0, "good": 0, "bad": 0 },
+        "defensiveWon": { "actions": 3, "good": 0, "bad": 0 },
+        "defensiveLost": { "actions": 3, "good": 0, "bad": 0 },
+        "fouls": { "actions": 0, "good": 0, "bad": 0 },
+        "interception": { "actions": 8, "good": 0, "bad": 0 },
+        "recovery": { "actions": 7, "good": 0, "bad": 0 }
+      }
+    }
+  ]
+}
