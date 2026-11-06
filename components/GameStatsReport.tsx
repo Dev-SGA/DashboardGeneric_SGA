@@ -37,28 +37,41 @@ const PASS_PLAY_TIPS = {
   lost: "Inaccurate Pass — Losing possession through an inaccurate pass or finding a teammate who is immediately under pressure and at high risk of losing possession.",
 } as const;
 
+const CLIP_TIP = "Click to watch the clips for this stat.";
+
 function PassPlayTip({ label, tip, href }: { label: string; tip: string; href?: string }) {
   const className = `pass-play-tip legend__label${href ? " pass-play-tip--clip" : ""}`;
-  if (href) {
-    return (
-      <a className={className} href={href} target="_blank" rel="noreferrer" data-tip={tip} aria-label={`${label}. ${tip}`}>
-        <span className="pass-play-tip__label">
-          {label}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/play-icon.png" alt="" className="play-icon" width={14} height={14} />
-        </span>
-      </a>
-    );
-  }
-  return (
-    <button type="button" className={className} data-tip={tip} aria-label={`${label}. ${tip}`}>
-      <span className="pass-play-tip__label">{label}</span>
+  const fullTip = href ? tip : `${tip} ${CLIP_TIP}`;
+  return href ? (
+    <a className={className} href={href} target="_blank" rel="noreferrer" data-tip={fullTip} aria-label={`${label}. ${fullTip}`}>
+      <span className="pass-play-tip__label">
+        {label}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/brand/play-icon.png" alt="" className="play-icon" width={14} height={14} />
+      </span>
+    </a>
+  ) : (
+    <button type="button" className={className} data-tip={fullTip} aria-label={`${label}. ${fullTip}`}>
+      <span className="pass-play-tip__label">
+        {label}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/brand/play-icon.png" alt="" className="play-icon" width={14} height={14} />
+      </span>
     </button>
   );
 }
 
 function ClipLegendLabel({ label, href }: { label: string; href?: string }) {
-  if (!href) return <span className="legend__label">{label}</span>;
+  if (!href)
+    return (
+      <button type="button" className="pass-play-tip legend__label" data-tip={CLIP_TIP} aria-label={`${label}. ${CLIP_TIP}`}>
+        <span className="pass-play-tip__label">
+          {label}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/play-icon.png" alt="" className="play-icon" width={14} height={14} />
+        </span>
+      </button>
+    );
   return (
     <a className="legend__label clip-link" href={href} target="_blank" rel="noreferrer">
       {label}

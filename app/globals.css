@@ -1527,6 +1527,7 @@ body::before {
 }
 
 .clip-link:hover,
+.clip-tip:hover,
 .pass-play-tip--clip:hover .pass-play-tip__label {
   color: var(--tone-accent);
 }
@@ -1553,7 +1554,15 @@ body::before {
   text-underline-offset: 3px;
 }
 
-.pass-play-tip::after {
+.clip-tip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pass-play-tip::after,
+.clip-tip::after {
   content: attr(data-tip);
   position: absolute;
   left: 0;
@@ -1584,7 +1593,8 @@ body::before {
 }
 
 .pass-play-tip:hover::after,
-.pass-play-tip:focus-visible::after {
+.pass-play-tip:focus-visible::after,
+.clip-tip:hover::after {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);

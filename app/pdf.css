@@ -91,6 +91,8 @@
   margin: 14px auto 0;
   border-radius: 10px;
   background: #0d3350;
+  object-fit: cover;
+  object-position: center;
 }
 
 .spdf-side__identity {
