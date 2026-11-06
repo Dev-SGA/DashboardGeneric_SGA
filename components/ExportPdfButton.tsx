@@ -33,7 +33,11 @@ export function ExportPdfButton({ stats }: ExportPdfButtonProps) {
       root.render(
         <StatsGamePdfSheet
           stats={exportStats}
-          photoUrl={stats.player.photo ? `${origin}${stats.player.photo}` : ""}
+          photoUrl={
+            stats.player.pdfPhoto || stats.player.photo
+              ? `${origin}${stats.player.pdfPhoto || stats.player.photo}`
+              : ""
+          }
           logoUrl={`${origin}${BRAND.logoTrimmed}`}
           clubLogoUrl={stats.player.clubLogo ? `${origin}${stats.player.clubLogo}` : ""}
           opponentLogoUrl={stats.opponentLogo ? `${origin}${stats.opponentLogo}` : ""}

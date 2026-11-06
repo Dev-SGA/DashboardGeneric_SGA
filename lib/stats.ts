@@ -73,6 +73,8 @@ export type StatsReport = {
     club: string;
     clubLogo: string;
     photo: string;
+    /** Image already in the PDF photo frame ratio; html2canvas ignores object-fit. */
+    pdfPhoto?: string;
   };
   matches: MatchStats[];
 };

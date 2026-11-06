@@ -8,7 +8,8 @@
     "name": "Athlete Name",
     "club": "Club Name",
     "clubLogo": "/brand/sga-logo-symbol-white.png",
-    "photo": "/player/athlete-placeholder.png"
+    "photo": "/player/athlete-placeholder.png",
+    "pdfPhoto": "/player/athlete-placeholder-pdf.png"
   },
   "matches": [
     {
